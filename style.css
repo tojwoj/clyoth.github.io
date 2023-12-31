@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Oswald&family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Noto+Sans:wght@300;400;500;600;700&family=Oswald&family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
 body, html {
     margin: 0;
     padding: 0;
@@ -99,11 +99,14 @@ nav ul li a.active {
 }
 
 .best-selling {
+    display: grid;
     margin-top: 50px;
     text-align: center;
     padding: 20px;
     max-width: 80%;
     margin: 0 auto;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .best-selling h2 {
@@ -113,19 +116,67 @@ nav ul li a.active {
     color: #34495E;           
 }
 
-.best-selling .image-container {
+.image-container {
+    grid-column: 1;
+    grid-row: 2;
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-direction: row;
+    box-sizing: border-box;
 }
 
-.best-selling img {
-    width: 10px;
-    height: auto;
-    border: 2px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+.bestSellingProducts{
+    width: 100%;
+    display: grid;
+    
 }
+
+.bestSellingProducts a{
+    text-decoration: none;
+}
+
+.bestSellingProducts h3 {
+    color: #000;
+    font-family: Noto Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    padding-left: 1vw;
+}
+
+.bestSellingProducts p {
+    color: #595959;
+    font-family: Noto Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    padding-left: 1vw;
+}
+
+.bestSellingProducts button{
+    height: 5vh;
+    border: 0;
+    background-color: #4B4B4B;
+    border-radius: 8px;
+    color: white;
+    font-family: "Overpass Mono";
+    font-weight: 800;
+    font-size: 1.4vw;
+    width: 100%;
+    cursor: pointer;
+}
+
+.samsung, .ryzen {
+    padding-top: 14%;
+    padding-bottom: 10%;
+}
+
+
 
 .product-info {
    display: none;
