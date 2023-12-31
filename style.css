@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Oswald&family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
 body, html {
     margin: 0;
     padding: 0;
     background-color: #D9DDDC;
-    font-family: Arial, sans-serif;
+    font-family: "Overpass Mono", sans-serif;
 }
 
 .main-header {
@@ -25,14 +26,15 @@ body, html {
 }
 
 .icon-container {
-    background-color: #89cff0;
+    background-color: #67809f;
     padding: 5px;
     margin: 0 5px;
     display: flex;
+    border-radius: 20%;
     justify-content: center;
     align-items: center;
     height: 40px;
-    box-shadow: 0px 0px 10px 0px #888888;
+    box-shadow: 0px 0px 10px 0px ;
 }
 
 .icon-container a {
@@ -41,12 +43,12 @@ body, html {
     align-items: center;
     width: 40px;
     height: 30px;
-    color: #1560BD;
+    color: #34495E;
     transition: 0.3s ease;
 }
 
 .icon-container a:hover {
-    color: #00004D;
+    color: #34495E;
 }
 
 nav ul {
@@ -55,26 +57,26 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: space-around;
-    background-color: #89cff0;
+    background-color: #67809f;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
 nav ul li {
-    padding: 18px 20px;
+    padding: .7vw 2vw;
 }
 
 nav ul li a {
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 750;
-    color: #1560BD;
-    font-family: Arial, sans-serif;
+    font-size: 1.1vw;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: "Overpass Mono", sans-serif;
     transition: 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #00004D;
+    color: #34495E;
 }
 
 .container {
@@ -106,9 +108,9 @@ nav ul li a.active {
 
 .best-selling h2 {
     margin-bottom: 20px;
-    font-family: Arial, sans-serif;
+    font-family: Oswald, sans-serif;
     font-size: 40px;
-    color: #1560BD;           
+    color: #34495E;           
 }
 
 .best-selling .image-container {
