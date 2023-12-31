@@ -34,37 +34,17 @@
             <img src="pd.jpg">
         </div>
     </div>
-<script>
-    let currentIndex = 0;
-    const wrapper = document.querySelector('.wrapper');
-    const images = document.querySelectorAll('.wrapper img');
-    const imageWidth = images[0].offsetWidth;
+    <script src="index.js"></script>
 
-    function slideImages() {
-        currentIndex++;
-        if (currentIndex >= images.length) {
-            currentIndex = 0;
-            wrapper.style.transition = 'none';
-            wrapper.style.transform = `translateX(0)`;
-            setTimeout(() => {
-                wrapper.style.transition = 'transform 0.5s ease-in-out';
-            }, 50);
-        }
-        wrapper.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-    }
-
-    setInterval(slideImages, 3000);
-</script>
-
-<section class="best-selling">
-        <h2>Best Selling</h2>
-        <div class="image-container">
-            <img src="amd.png" alt="">
-            <img src="aorus.png" alt="">
-            <img src="ryzen.jpg" alt="">
-            <img src="samsung.webp" alt="">
-        </div>
-</section>
+    <section class="best-selling">
+            <h2>Best Selling</h2>
+            <div class="image-container">
+                <img src="amd.png" alt="">
+                <img src="aorus.png" alt="">
+                <img src="ryzen.jpg" alt="">
+                <img src="samsung.webp" alt="">
+            </div>
+    </section>
 
 
 </body>
