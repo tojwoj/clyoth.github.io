@@ -16,3 +16,23 @@ function getCookie(name) {
 
     return null;
 }
+
+function checkSocketIntel(mobo){
+    let socket = getCookie("cpuSocket");
+    if (socket === "1700"){
+        setCookie("mobo",mobo);
+        location.replace("checkout.html")
+    } else {
+        alert("Socket not Compatible! Please choose another Motherboard.")
+    }
+}
+
+function checkSocketAMD(mobo){
+    let socket = getCookie("cpuSocket");
+    if (socket === "AM4"){
+        setCookie("mobo",mobo);
+        location.replace("checkout.html")
+    } else {
+        alert("Socket not Compatible! Please choose another Motherboard.")
+    }
+}
