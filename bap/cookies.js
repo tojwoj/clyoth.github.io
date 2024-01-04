@@ -3,16 +3,16 @@ function setCookie(name, value) {
 }
   
 function getCookie(name) {
-const cookieName = name + "=";
-const cookiesArray = document.cookie.split(';');
+    const cookieName = name + "=";
+    const cookiesArray = document.cookie.split(';');
 
-for (let i = 0; i < cookiesArray.length; i++) {
-    let cookie = cookiesArray[i].trim();
+    for (let i = 0; i < cookiesArray.length; i++) {
+        let cookie = cookiesArray[i].trim();
 
-    if (cookie.indexOf(cookieName) === 0) {
-    return cookie.substring(cookieName.length, cookie.length);
+        if (cookie.indexOf(cookieName) === 0) {
+        return cookie.substring(cookieName.length, cookie.length);
+        }
     }
-}
 
-return null;
+    return null;
 }
