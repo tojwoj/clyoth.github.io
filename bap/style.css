@@ -140,6 +140,10 @@ body, html {
     
     /* Content */
 
+    .crossedOut{
+        text-decoration: line-through;
+    }
+
     .cpuPage {
         display: grid;
         margin-top: 50px;
